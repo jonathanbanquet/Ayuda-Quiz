@@ -1,0 +1,222 @@
+
+body{
+    background-image: url(../recursos/imagenes/imagen1.jpg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tipoLetra{
+
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+
+.div-Contenido a {
+    text-decoration: none; /* Quita el subrayado */
+  color: gray; /* Color del texto del enlace */
+}
+.div-Contenido a:hover{
+    background-color: brown;
+    
+}
+.div-Contenido{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none; 
+    height: 80px;
+    background-color: white;
+    vertical-align: middle;
+    
+}
+
+.div-Contenido > *:first-child {
+    flex-grow: 1; /* El primer elemento se expandirá para llenar el espacio restante */
+}
+
+.div-Contenido > *:not(:first-child) {
+    flex-grow: 0; /* Los demás elementos no se expandirán */
+    margin: 10px;
+}
+
+.div-Contenido2 {
+    width: 250px;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+    height: 250px;
+    background-color: white;
+    padding-left: 30px;
+}
+
+.div-Contenido2 p
+{
+    font-size: small;
+    
+    
+}
+
+.boton1 {
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: brown;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    
+    text-decoration: none;
+}
+
+.boton1 a {
+    text-decoration: none;
+    color: aliceblue;
+} 
+.boton2 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.boton2{
+    background-color: rgb(79, 128, 60);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    color: aliceblue;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.verde{
+    color: rgb(94, 211, 47);
+    font-size: x-small;
+    margin-top: auto;
+}
+.rojo{
+    margin-top: auto;
+    color: brown;
+    font-size: x-small;
+}
+.div-Contenido3{
+    
+    
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 5%;
+    height: 250px;
+    margin-left: 10%;
+    
+}
+
+.div-Contenido3 button {
+
+    background-color: rgb(79, 128, 60);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+
+    
+}
+.div-Contenido3 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.div-Contenido4 {
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: -17.82%;
+    height: 250px;
+    margin-left: 30%;
+    margin-right: auto; 
+
+}
+
+.div-Contenido4 button {
+    background-color: rgb(79, 128, 60);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    
+    
+}
+.div-Contenido4 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.div-Contenido5 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.div-Contenido5{
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: -17.82%;
+    height: 250px;
+    margin-left: 50%;
+    margin-right: auto; 
+
+}
+
+.div-Contenido5 button {
+    background-color: rgb(79, 128, 60);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;  
+}
+
+.div-Contenido6 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.div-Contenido6{
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: -17.82%;
+    height: 250px;
+    margin-left: 70%;
+    margin-right: auto; 
+
+}
+
+.div-Contenido6 button {
+    background-color: rgb(79, 128, 60);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;  
+}
+
+.imagen6{
+margin-top: 10%;
+width: 100%;
+height: 100px;
+
+}
+
+.imagen7{
+
+width: 100%;
+height: 100px;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/utilidades.js"></script>
+
+</head>
+<body>
+    <button onclick= "crearUI(); clickUnaVez()">Presioname</button>
+    
+        <script>
+
+        
+        function crearUI() {
+            
+            
+
+            //Primer Nav
+            var imagen =crearNodoImagen('logo.JPG','')
+
+            var p = crearNodoConEnlace('a','Home', 1)
+
+            var p2 = crearNodoConEnlace('a','Services',1)
+
+            var p3 = crearNodoConEnlace('a','Events', 1)
+
+            var p4 = crearNodoConEnlace('a','About us',1)
+
+            var p5 = crearNodoConEnlace('a','Contact',1)
+
+            var nodo1 = crearNodo('li')
+
+                        //var imagen =  crearNodoImagen('imagen.jpg.png', 'cielo')
+
+            adicionarNodoAContenedor(imagen,nodo1)
+
+            adicionarNodoAContenedor(p, nodo1)
+
+            adicionarNodoAContenedor(p2,nodo1)
+
+            adicionarNodoAContenedor(p3,nodo1)
+
+            adicionarNodoAContenedor(p4,nodo1)
+
+            adicionarNodoAContenedor(p5,nodo1)
+
+            nodo1.setAttribute('class', 'div-Contenido')
+           
+            
+            adicionarNodoABody(nodo1)
+            //Segundo nav
+            var nodo2 = crearNodo('div')
+
+            var boton = crearNodoConEnlace('button','$8,450', 1)
+
+            var boton2 = crearNodoConEnlace('button','Pre-Booking', 1)
+            boton.setAttribute('class', 'boton1')
+            var p6 = crearNodoConTexto('h3','Venice, Italy', 1)
+            boton2.setAttribute('class','verde')
+            var textoCompleto1 = 'Travel is free responsive by templatemo'
+
+            var textoCompleto2 = 'All images used in this '
+
+            // Dividir el párrafo en dos partes usando una coma como delimitador
+            var partes1 = textoCompleto1.split(',');
+
+            var partes2 = textoCompleto2.split(',');
+
+            // Crear nodos de párrafo separados para cada parte
+            var p9 = crearNodoConTexto('p', partes1[0], 1); 
+
+            // Crear nodo para la primera parte del primer párrafo
+            var p10 = crearNodoConTexto('p', partes2[0], 1); 
+
+            
+            adicionarNodoAContenedor(boton,nodo2)
+
+            adicionarNodoAContenedor(p6,nodo2)
+
+            adicionarNodoAContenedor(p9,nodo2)
+
+            adicionarNodoAContenedor(p10,nodo2)
+
+            adicionarNodoAContenedor(boton2,nodo2)
+
+            adicionarNodoABody(nodo2)
+
+            nodo2.setAttribute('class','div-Contenido2')
+            boton2.setAttribute('class','boton2')
+            //tercer nav
+            var div2 = crearNodo('div')
+
+           
+        
+
+            var boton3 = crearNodoConEnlace('button','ITALY', 1) 
+
+            var imagen2 = crearNodoImagen('1.JPG', '')
+
+            var p9 = crearNodoConTexto('p','Rome, Milan, Naples',1)
+
+            var boton4 = crearNodoConEnlace('button', '$1800 BOOK NOW',1)
+
+            p9.setAttribute('class','rojo')
+
+            var p10 = crearNodoConTexto('p', 'SILVER HOTEL, 4 NIGHTS, 5 STARS',1)
+
+            p10.setAttribute('class','verde')
+
+            adicionarNodoAContenedor(boton3, div2)
+
+            adicionarNodoAContenedor(imagen2, div2)
+
+           adicionarNodoAContenedor(p9,div2)
+
+           adicionarNodoAContenedor(p10,div2)
+
+           adicionarNodoAContenedor(boton4,div2)
+
+           
+            
+            adicionarNodoABody(div2)
+
+            div2.setAttribute('class','div-Contenido3')
+
+            
+
+            
+
+            //var boton7 = crearNodoConEnlace('button','GERMANY', 1)
+
+            //var boton8 = crearNodoConEnlace('button','SPAIN', 1)
+
+            //Cuarto nav var div2 = crearNodo('div')
+
+           var div3 = crearNodo('div')
+        
+
+            var boton4 = crearNodoConEnlace('button','FRANCE', 1) 
+
+            var imagen3 = crearNodoImagen('2.JPG', '')
+
+            var p11 = crearNodoConTexto('p', 'Paris, Marseille, Lyon',1)
+
+            var boton5 = crearNodoConEnlace('button', '$2300 BOOK NOW',1)
+
+        p11.setAttribute('class','rojo')
+
+        var p12 = crearNodoConTexto('p', 'NEW PALACE, 5 NIGHTS, 5 STARS',1)
+
+        p12.setAttribute('class','verde')
+
+        adicionarNodoAContenedor(boton4, div3)
+
+        adicionarNodoAContenedor(imagen3, div3)
+
+        adicionarNodoAContenedor(p11,div3)
+
+        adicionarNodoAContenedor(p12,div3)
+
+        adicionarNodoAContenedor(boton5,div3)
+
+        div3.setAttribute('class','div-Contenido4')
+
+            var div4 = crearNodo('div')
+
+            adicionarNodoABody(div3)
+
+            var boton6 = crearNodoConEnlace('button','GERMANY', 1) 
+
+            var imagen4 = crearNodoImagen('2.JPG', '')
+
+        var p13 = crearNodoConTexto('p', 'Berlin, Hamburg, Munich',1)
+
+        var boton7 = crearNodoConEnlace('button', '$3100 BOOK NOW',1)
+
+        p13.setAttribute('class','rojo')
+
+        var p14 = crearNodoConTexto('p', 'LUKE HOTEL, 5 NIGHTS, 6 STARS',1)
+
+        p14.setAttribute('class','verde')
+
+        adicionarNodoAContenedor(boton6, div4)
+
+        adicionarNodoAContenedor(imagen4, div4)
+
+        adicionarNodoAContenedor(p13,div4)
+
+        adicionarNodoAContenedor(p14,div4)
+
+        adicionarNodoAContenedor(boton7,div4)
+
+        div4.setAttribute('class','div-Contenido5')
+
+
+        adicionarNodoABody(div4)
+
+        var div5 = crearNodo('div')
+
+
+
+        var boton8 = crearNodoConEnlace('button','SPAIN', 1) 
+
+        var imagen5 = crearNodoImagen('2.JPG', '')
+
+        var p15 = crearNodoConTexto('p', 'Madrid, Barcelona, Valencia',1)
+
+        var boton9 = crearNodoConEnlace('button', '$4100 BOOK NOW',1)
+
+        p15.setAttribute('class','rojo')
+
+        var p16 = crearNodoConTexto('p', 'GOOD HOTEL, 6 NIGHTS, 6 STARS',1)
+
+        p16.setAttribute('class','verde')
+
+        adicionarNodoAContenedor(boton8, div5)
+
+        adicionarNodoAContenedor(imagen5, div5)
+
+        adicionarNodoAContenedor(p15,div5)
+
+        adicionarNodoAContenedor(p16,div5)
+
+        adicionarNodoAContenedor(boton9,div5)
+
+        div5.setAttribute('class','div-Contenido6')
+        
+        adicionarNodoABody(div5)
+
+        var imagen6 = crearNodoImagen('3.JPG','')
+        imagen6.setAttribute('class', 'imagen6')
+         adicionarNodoABody(imagen6)
+         var imagen7 = crearNodoImagen('7.JPG','')
+         imagen7.setAttribute('class', 'imagen7')
+         adicionarNodoABody(imagen7)
+        }         
+</script>
+</body>
+</html> 

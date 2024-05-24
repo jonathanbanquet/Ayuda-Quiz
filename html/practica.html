@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/practica.js"></script>
+</head>
+<body>
+    <button onclick="desplegarPagina()">click</button>
+
+    <script >
+
+function desplegarPagina(){
+
+    
+    
+    
+// Función para agregar nodos al body del documento
+function agregarNodo(nodo){
+    document.body.appendChild(nodo);
+}
+
+// Crear elementos de entrada y botón
+var num1 = crearNodo('input');
+num1.id = 'num1';
+num1.type = 'number';
+
+var num2 = crearNodo('input');
+num2.id = 'num2';
+num2.type = 'number';
+
+var botonSuma = crearNodoConTexto('button', 'Sumar', 1);
+botonSuma.id = 'botonSuma';
+
+// Agregar elementos al documento
+agregarNodo(num1);
+agregarNodo(num2);
+agregarNodo(botonSuma);
+
+// Función para sumar los números y mostrar el resultado
+function sumarNumeros() {
+    var numero1 = parseFloat(document.getElementById('num1').value);
+    var numero2 = parseFloat(document.getElementById('num2').value);
+    var resultado = numero1 + numero2;
+
+    var resultadoNodo = crearNodoConTexto('p', 'Resultado: ' + resultado, 1);
+    agregarNodo(resultadoNodo);
+}
+
+// Agregar evento al botón
+document.getElementById('botonSuma').addEventListener('click', sumarNumeros);
+}
+    </script>
+</body>
+</html>
